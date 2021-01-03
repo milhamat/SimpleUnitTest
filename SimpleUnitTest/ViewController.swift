@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let boxView = UIView()
+    let constVal: Int = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,6 @@ class ViewController: UIViewController {
     func setupView(){
         
         self.view.addSubview(self.boxView)
-        
-        let constVal: Int = 100
         
         boxView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
